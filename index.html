@@ -1,1 +1,37 @@
-fvdbsijabxojabd[a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Security Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Alpha Security Inventory Management</h1>
+    <form id="uniformForm">
+        <label for="guardName">Guard Name:</label>
+        <input type="text" id="guardName" name="guardName"><br><br>
+        
+        <label for="uniformType">Uniform Type:</label>
+        <select id="uniformType" name="uniformType">
+            <option value="Shirt">Shirt</option>
+            <option value="Jacket">Jacket</option>
+            <option value="Pants">Pants</option>
+            <!-- Add more uniform types here -->
+        </select><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1"><br><br>
+        
+        <label for="supervisor">Supervisor:</label>
+        <input type="text" id="supervisor" name="supervisor"><br><br>
+        
+        <button type="button" onclick="addUniform()">Add Uniform</button>
+    </form>
+
+    <div id="inventory"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
